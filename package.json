@@ -1,0 +1,15 @@
+{
+  "name": "cat-food-test-project",
+  "version": "1.0.0",
+  "description": "FunBox test project",
+  "main": "index.js",
+  "repository": "https://github.com/Kalinss/CatsFood.git",
+  "author": "Kalinss <Kalinss16@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "ts-loader": "^8.0.2",
+    "typescript": "^4.0.2",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
+}
