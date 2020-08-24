@@ -9,7 +9,7 @@ const isDevelopment = NODE_ENV === "development" || false;
 
 module.exports = {
   entry: "./src/index.ts",
-  
+
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "[name][hash].js",
@@ -39,6 +39,7 @@ module.exports = {
             loader: "css-loader",
             options: {
               sourceMap: isDevelopment,
+              modules: true,
             },
           },
           {
