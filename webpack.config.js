@@ -1,6 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const {CleanWebpackPlugin} = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const NODE_ENV = process.env.NODE_ENV;
 const isProduction = NODE_ENV === "production" || false;
@@ -23,6 +24,36 @@ module.exports = {
         use: "ts-loader",
         exclude: /node_modules/,
       },
+      {
+        test: /\.s[ac]ss$/i,
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              publicPath: "./src/style.scss",
+            },
+          },
+          {
+            loader: "css-loader",
+            options: {
+              sourceMap: isDevelopment,
+            },
+          },
+          {
+            loader: "postcss-loader",
+            options: {
+              sourceMap: isDevelopment,
+              config: { path: "./postcss.config.js" },
+            },
+          },
+          {
+            loader: "sass-loader",
+            options: {
+              sourceMap: isDevelopment,
+            },
+          },
+        ],
+      },
     ],
   },
   resolve: {
@@ -34,6 +65,10 @@ module.exports = {
     port: 9000,
   },
   plugins: [
+    new MiniCssExtractPlugin({
+      filename: "[name][hash].css",
+      chunkFilename: "[id].css",
+    }),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: "./src/index.html",
