@@ -9,6 +9,7 @@ const isDevelopment = NODE_ENV === "development" || false;
 
 module.exports = {
   entry: "./src/index.ts",
+  
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "[name][hash].js",
@@ -24,6 +25,7 @@ module.exports = {
         use: "ts-loader",
         exclude: /node_modules/,
       },
+
       {
         test: /\.s[ac]ss$/i,
         use: [
@@ -54,16 +56,50 @@ module.exports = {
           },
         ],
       },
+
+      {
+        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        exclude: path.resolve(__dirname, "./src/assets/images"),
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              publicPath: "/assets/fonts/",
+              outputPath: "assets/fonts/",
+              esModule: false,
+            },
+          },
+        ],
+      },
+
+      {
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        exclude: path.resolve(__dirname, "./src/assets/fonts"),
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: isDevelopment ? "[name].[ext]" : "[contenthash].[ext]",
+              publicPath: "assets/images",
+              outputPath: "assets/images",
+            },
+          },
+        ],
+      },
     ],
   },
+
   resolve: {
     extensions: [".tsx", ".ts", ".js"],
   },
+
   devServer: {
     contentBase: path.join(__dirname, "dist"),
     compress: true,
     port: 9000,
   },
+
   plugins: [
     new MiniCssExtractPlugin({
       filename: "[name][hash].css",
