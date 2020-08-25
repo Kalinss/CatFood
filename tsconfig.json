@@ -7,13 +7,21 @@
     "declarationMap": true,
     "sourceMap": true,
     "strict": true,
+    "baseUrl": "./src",
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "typeRoots": ["node_modules/@types"],
     "allowSyntheticDefaultImports": true,
     "alwaysStrict": true,
-    "strictFunctionTypes": true
+    "resolveJsonModule": true,
+    "noEmitOnError": true,
+    "noImplicitThis": true,
+    "strictBindCallApply": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "downlevelIteration": true
   },
   "include": ["src/**/*", "global.d.ts"],
   "exclude": ["node_modules"]
