@@ -4,7 +4,6 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const NODE_ENV = process.env.NODE_ENV;
-const isProduction = NODE_ENV === "production" || false;
 const isDevelopment = NODE_ENV === "development" || false;
 
 module.exports = {
@@ -21,7 +20,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.tsx?$/,
+        test: /\.ts(x?)$/,
         use: "ts-loader",
         exclude: /node_modules/,
       },
@@ -40,6 +39,7 @@ module.exports = {
             options: {
               sourceMap: isDevelopment,
               modules: true,
+              //localIdentName: '[name]_[local]_[hash:base64:5]'
             },
           },
           {
