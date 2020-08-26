@@ -1,0 +1,11 @@
+@import "../../../styles/variables";
+
+.header {
+  font-weight: bold;
+  font-size: 24px;
+  color: $header-color-primary;
+
+  & h2 {
+    font-size: 48px;
+  }
+}

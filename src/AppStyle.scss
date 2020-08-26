@@ -1,0 +1,30 @@
+@import "styles/mixins";
+
+.wrapper {
+  padding: 0 10px;
+  width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+@include desktop() {
+  .wrapper {
+    width: 100%;
+  }
+}
+
+@include max-media(1039px) {
+  .wrapper {
+    height: auto;
+    padding: 50px;
+  }
+}
+
+@include max-media(340px) {
+  .wrapper {
+    padding: 35px 0;
+  }
+}
