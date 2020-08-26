@@ -1,0 +1,294 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CatFoodList should be rendered 1`] = `
+<div
+  className="wrapper"
+>
+  <ul
+    className="list"
+  >
+    <li>
+      <div
+        className="wrapper item"
+      >
+        <div
+          className="item"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <svg
+            className="border svg"
+            id="Слой_2"
+            viewBox="0 0 320 480"
+            x="0px"
+            xmlSpace="preserve"
+            y="0px"
+          >
+            <path
+              className="path"
+              d="M 305 478 H 12.3 C 6.6 478 2 473.4 2 467.7 V 45 c 0 -3 5 -6 10 -11 c 8.5 -8.5 17.4 -17.5 25 -25 c 5 -5 5.1 -7 8 -7 h 254 c 14.5 -0.5 20.5 -0.5 19 17 v 439 C 317.5 472 318 478 305 478 Z"
+            />
+          </svg>
+          <div
+            className="main"
+          >
+            <p
+              className="description mouseLeave"
+            >
+              Сказочное заморское яство
+            </p>
+            <div
+              className="header title"
+            >
+               
+              <h2>
+                Нямушка
+              </h2>
+               
+            </div>
+            <div
+              className="header subTitle"
+            >
+               
+              <span>
+                c фуа-гра
+              </span>
+               
+            </div>
+            <div
+              className="info"
+            >
+              <ul>
+                <li>
+                  <b>
+                    10
+                  </b>
+                   порций
+                </li>
+                <li>
+                  мышь в подарок
+                </li>
+              </ul>
+            </div>
+            <div
+              className="body price"
+            >
+              <span
+                className="count"
+              >
+                0,5
+              </span>
+              <span
+                className="metric"
+              >
+                кг
+              </span>
+            </div>
+          </div>
+        </div>
+        <p
+          className="additional"
+          onClick={[Function]}
+        >
+          Чего сидишь? Порадуй котэ, 
+          <a>
+            купи
+          </a>
+        </p>
+      </div>
+    </li>
+    <li>
+      <div
+        className="wrapper item"
+      >
+        <div
+          className="item"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <svg
+            className="border svg"
+            id="Слой_2"
+            viewBox="0 0 320 480"
+            x="0px"
+            xmlSpace="preserve"
+            y="0px"
+          >
+            <path
+              className="path"
+              d="M 305 478 H 12.3 C 6.6 478 2 473.4 2 467.7 V 45 c 0 -3 5 -6 10 -11 c 8.5 -8.5 17.4 -17.5 25 -25 c 5 -5 5.1 -7 8 -7 h 254 c 14.5 -0.5 20.5 -0.5 19 17 v 439 C 317.5 472 318 478 305 478 Z"
+            />
+          </svg>
+          <div
+            className="main"
+          >
+            <p
+              className="description mouseLeave"
+            >
+              Сказочное заморское яство
+            </p>
+            <div
+              className="header title"
+            >
+               
+              <h2>
+                Нямушка
+              </h2>
+               
+            </div>
+            <div
+              className="header subTitle"
+            >
+               
+              <span>
+                c рыбой
+              </span>
+               
+            </div>
+            <div
+              className="info"
+            >
+              <ul>
+                <li>
+                  <b>
+                    40
+                  </b>
+                   порций
+                </li>
+                <li>
+                  <b>
+                    2
+                  </b>
+                   мыши в подарок
+                </li>
+              </ul>
+            </div>
+            <div
+              className="body price"
+            >
+              <span
+                className="count"
+              >
+                2
+              </span>
+              <span
+                className="metric"
+              >
+                кг
+              </span>
+            </div>
+          </div>
+        </div>
+        <p
+          className="additional"
+          onClick={[Function]}
+        >
+          Чего сидишь? Порадуй котэ, 
+          <a>
+            купи
+          </a>
+        </p>
+      </div>
+    </li>
+    <li>
+      <div
+        className="wrapper item"
+      >
+        <div
+          className="item"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <svg
+            className="border svg"
+            id="Слой_2"
+            viewBox="0 0 320 480"
+            x="0px"
+            xmlSpace="preserve"
+            y="0px"
+          >
+            <path
+              className="path"
+              d="M 305 478 H 12.3 C 6.6 478 2 473.4 2 467.7 V 45 c 0 -3 5 -6 10 -11 c 8.5 -8.5 17.4 -17.5 25 -25 c 5 -5 5.1 -7 8 -7 h 254 c 14.5 -0.5 20.5 -0.5 19 17 v 439 C 317.5 472 318 478 305 478 Z"
+            />
+          </svg>
+          <div
+            className="main"
+          >
+            <p
+              className="description mouseLeave"
+            >
+              Сказочное заморское яство
+            </p>
+            <div
+              className="header title"
+            >
+               
+              <h2>
+                Нямушка
+              </h2>
+               
+            </div>
+            <div
+              className="header subTitle"
+            >
+               
+              <span>
+                c курой
+              </span>
+               
+            </div>
+            <div
+              className="info"
+            >
+              <ul>
+                <li>
+                  <b>
+                    100
+                  </b>
+                   порций
+                </li>
+                <li>
+                  <b>
+                    5
+                  </b>
+                   мышей в подарок
+                </li>
+                <li>
+                  заказчик доволен
+                </li>
+              </ul>
+            </div>
+            <div
+              className="body price"
+            >
+              <span
+                className="count"
+              >
+                5
+              </span>
+              <span
+                className="metric"
+              >
+                кг
+              </span>
+            </div>
+          </div>
+        </div>
+        <p
+          className="additional"
+          onClick={[Function]}
+        >
+          Чего сидишь? Порадуй котэ, 
+          <a>
+            купи
+          </a>
+        </p>
+      </div>
+    </li>
+  </ul>
+</div>
+`;

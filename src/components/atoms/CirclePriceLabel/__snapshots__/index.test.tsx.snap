@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CirclePriceLabel should be rendered 1`] = `
+<div
+  className="body"
+>
+  <span
+    className="count"
+  >
+    5
+  </span>
+  <span
+    className="metric"
+  >
+    кг
+  </span>
+</div>
+`;
