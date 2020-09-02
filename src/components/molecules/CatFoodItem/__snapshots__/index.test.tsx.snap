@@ -5,10 +5,13 @@ exports[`CatFoodItem should be rendered 1`] = `
   className="wrapper"
 >
   <div
+    aria-checked={false}
     className="item"
     onClick={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
+    role="checkbox"
+    tabIndex={1}
   >
     <svg
       className="border svg"
@@ -27,29 +30,35 @@ exports[`CatFoodItem should be rendered 1`] = `
       className="main"
     >
       <p
+        aria-hidden="true"
         className="description mouseLeave"
       >
         Сказочное заморское яство
       </p>
       <div
-        className="header title"
+        aria-hidden="true"
       >
-         
-        <h2>
-          Нямушка
-        </h2>
-         
+        <div
+          className="header title"
+        >
+           
+          <h2>
+            Нямушка
+          </h2>
+           
+        </div>
+        <div
+          className="header subTitle"
+        >
+           
+          <span>
+            c фуа-гра
+          </span>
+           
+        </div>
       </div>
       <div
-        className="header subTitle"
-      >
-         
-        <span>
-          c фуа-гра
-        </span>
-         
-      </div>
-      <div
+        aria-hidden="true"
         className="info"
       >
         <ul>
@@ -65,22 +74,55 @@ exports[`CatFoodItem should be rendered 1`] = `
         </ul>
       </div>
       <div
-        className="body price"
+        aria-hidden="true"
       >
-        <span
-          className="count"
+        <div
+          className="body price"
         >
-          0,5
-        </span>
-        <span
-          className="metric"
+          <span
+            className="count"
+          >
+            0,5
+          </span>
+          <span
+            className="metric"
+          >
+            кг
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="srOnly"
+    >
+      <p />
+      <p>
+        Добавить в корзину нажатием enter
+      </p>
+      <div
+        aria-live="polite"
+        role="status"
+      >
+        <p
+          aria-hidden={false}
         >
-          кг
-        </span>
+          Не добавлено
+        </p>
+        <p
+          aria-hidden={true}
+        >
+          Добавлено
+        </p>
+        <p
+          aria-hidden={true}
+        >
+          Не добавлено, корм закончился
+        </p>
       </div>
     </div>
   </div>
   <p
+    aria-hidden="true"
     className="additional"
     onClick={[Function]}
   >

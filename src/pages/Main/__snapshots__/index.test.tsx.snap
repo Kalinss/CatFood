@@ -1,331 +1,39 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CatFoodList should be rendered 1`] = `
-<main
-  className="main"
->
-  <p
-    className="title"
-  >
-    Ты сегодня покормил кота?
-  </p>
-  <div
-    className="wrapper"
-  >
-    <ul
-      className="list"
-    >
-      <li>
-        <div
-          className="wrapper item"
-        >
-          <div
-            className="item"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-          >
-            <svg
-              className="border svg"
-              id="Слой_2"
-              viewBox="0 0 320 480"
-              x="0px"
-              xmlSpace="preserve"
-              y="0px"
-            >
-              <path
-                className="path"
-                d="M 305 478 H 12.3 C 6.6 478 2 473.4 2 467.7 V 45 c 0 -3 5 -6 10 -11 c 8.5 -8.5 17.4 -17.5 25 -25 c 5 -5 5.1 -7 8 -7 h 254 c 14.5 -0.5 20.5 -0.5 19 17 v 439 C 317.5 472 318 478 305 478 Z"
-              />
-            </svg>
-            <div
-              className="main"
-            >
-              <p
-                className="description mouseLeave"
-              >
-                Сказочное заморское яство
-              </p>
-              <div
-                className="header title"
-              >
-                 
-                <h2>
-                  Нямушка
-                </h2>
-                 
-              </div>
-              <div
-                className="header subTitle"
-              >
-                 
-                <span>
-                  c фуа-гра
-                </span>
-                 
-              </div>
-              <div
-                className="info"
-              >
-                <ul>
-                  <li>
-                    <b>
-                      10
-                    </b>
-                     порций
-                  </li>
-                  <li>
-                    мышь в подарок
-                  </li>
-                </ul>
-              </div>
-              <div
-                className="body price"
-              >
-                <span
-                  className="count"
-                >
-                  0,5
-                </span>
-                <span
-                  className="metric"
-                >
-                  кг
-                </span>
-              </div>
-            </div>
-          </div>
-          <p
-            className="additional"
-            onClick={[Function]}
-          >
-            Чего сидишь? Порадуй котэ, 
-            <a>
-              купи
-            </a>
-          </p>
-        </div>
-      </li>
-      <li>
-        <div
-          className="wrapper item"
-        >
-          <div
-            className="item"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-          >
-            <svg
-              className="border svg"
-              id="Слой_2"
-              viewBox="0 0 320 480"
-              x="0px"
-              xmlSpace="preserve"
-              y="0px"
-            >
-              <path
-                className="path"
-                d="M 305 478 H 12.3 C 6.6 478 2 473.4 2 467.7 V 45 c 0 -3 5 -6 10 -11 c 8.5 -8.5 17.4 -17.5 25 -25 c 5 -5 5.1 -7 8 -7 h 254 c 14.5 -0.5 20.5 -0.5 19 17 v 439 C 317.5 472 318 478 305 478 Z"
-              />
-            </svg>
-            <div
-              className="main"
-            >
-              <p
-                className="description mouseLeave"
-              >
-                Сказочное заморское яство
-              </p>
-              <div
-                className="header title"
-              >
-                 
-                <h2>
-                  Нямушка
-                </h2>
-                 
-              </div>
-              <div
-                className="header subTitle"
-              >
-                 
-                <span>
-                  c рыбой
-                </span>
-                 
-              </div>
-              <div
-                className="info"
-              >
-                <ul>
-                  <li>
-                    <b>
-                      40
-                    </b>
-                     порций
-                  </li>
-                  <li>
-                    <b>
-                      2
-                    </b>
-                     мыши в подарок
-                  </li>
-                </ul>
-              </div>
-              <div
-                className="body price"
-              >
-                <span
-                  className="count"
-                >
-                  2
-                </span>
-                <span
-                  className="metric"
-                >
-                  кг
-                </span>
-              </div>
-            </div>
-          </div>
-          <p
-            className="additional"
-            onClick={[Function]}
-          >
-            Чего сидишь? Порадуй котэ, 
-            <a>
-              купи
-            </a>
-          </p>
-        </div>
-      </li>
-      <li>
-        <div
-          className="wrapper item"
-        >
-          <div
-            className="item"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-          >
-            <svg
-              className="border svg"
-              id="Слой_2"
-              viewBox="0 0 320 480"
-              x="0px"
-              xmlSpace="preserve"
-              y="0px"
-            >
-              <path
-                className="path"
-                d="M 305 478 H 12.3 C 6.6 478 2 473.4 2 467.7 V 45 c 0 -3 5 -6 10 -11 c 8.5 -8.5 17.4 -17.5 25 -25 c 5 -5 5.1 -7 8 -7 h 254 c 14.5 -0.5 20.5 -0.5 19 17 v 439 C 317.5 472 318 478 305 478 Z"
-              />
-            </svg>
-            <div
-              className="main"
-            >
-              <p
-                className="description mouseLeave"
-              >
-                Сказочное заморское яство
-              </p>
-              <div
-                className="header title"
-              >
-                 
-                <h2>
-                  Нямушка
-                </h2>
-                 
-              </div>
-              <div
-                className="header subTitle"
-              >
-                 
-                <span>
-                  c курой
-                </span>
-                 
-              </div>
-              <div
-                className="info"
-              >
-                <ul>
-                  <li>
-                    <b>
-                      100
-                    </b>
-                     порций
-                  </li>
-                  <li>
-                    <b>
-                      5
-                    </b>
-                     мышей в подарок
-                  </li>
-                  <li>
-                    заказчик доволен
-                  </li>
-                </ul>
-              </div>
-              <div
-                className="body price"
-              >
-                <span
-                  className="count"
-                >
-                  5
-                </span>
-                <span
-                  className="metric"
-                >
-                  кг
-                </span>
-              </div>
-            </div>
-          </div>
-          <p
-            className="additional"
-            onClick={[Function]}
-          >
-            Чего сидишь? Порадуй котэ, 
-            <a>
-              купи
-            </a>
-          </p>
-        </div>
-      </li>
-    </ul>
-  </div>
-</main>
-`;
-
 exports[`Main should be rendered 1`] = `
 <main
   className="main"
+  role="main"
 >
-  <p
+  <h1
     className="title"
+    role="title"
   >
     Ты сегодня покормил кота?
-  </p>
+  </h1>
   <div
     className="wrapper"
   >
     <ul
       className="list"
     >
+      <p
+        className="srOnly"
+      >
+        Список с кошачьим кормом
+      </p>
       <li>
         <div
           className="wrapper item"
         >
           <div
+            aria-checked={false}
             className="item"
             onClick={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
+            role="checkbox"
+            tabIndex={1}
           >
             <svg
               className="border svg"
@@ -344,29 +52,35 @@ exports[`Main should be rendered 1`] = `
               className="main"
             >
               <p
+                aria-hidden="true"
                 className="description mouseLeave"
               >
                 Сказочное заморское яство
               </p>
               <div
-                className="header title"
+                aria-hidden="true"
               >
-                 
-                <h2>
-                  Нямушка
-                </h2>
-                 
+                <div
+                  className="header title"
+                >
+                   
+                  <h2>
+                    Нямушка
+                  </h2>
+                   
+                </div>
+                <div
+                  className="header subTitle"
+                >
+                   
+                  <span>
+                    c фуа-гра
+                  </span>
+                   
+                </div>
               </div>
               <div
-                className="header subTitle"
-              >
-                 
-                <span>
-                  c фуа-гра
-                </span>
-                 
-              </div>
-              <div
+                aria-hidden="true"
                 className="info"
               >
                 <ul>
@@ -382,29 +96,64 @@ exports[`Main should be rendered 1`] = `
                 </ul>
               </div>
               <div
-                className="body price"
+                aria-hidden="true"
               >
-                <span
-                  className="count"
+                <div
+                  className="body price"
                 >
-                  0,5
-                </span>
-                <span
-                  className="metric"
+                  <span
+                    className="count"
+                  >
+                    0,5
+                  </span>
+                  <span
+                    className="metric"
+                  >
+                    кг
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              className="srOnly"
+            >
+              <p>
+                Кошачий корм Нямушка 0.5 киллограмма, это 10 порций, мышь в подарок
+              </p>
+              <p>
+                Добавить в корзину нажатием enter
+              </p>
+              <div
+                aria-live="polite"
+                role="status"
+              >
+                <p
+                  aria-hidden={false}
                 >
-                  кг
-                </span>
+                  Не добавлено
+                </p>
+                <p
+                  aria-hidden={true}
+                >
+                  Добавлено
+                </p>
+                <p
+                  aria-hidden={true}
+                >
+                  Не добавлено, корм закончился
+                </p>
               </div>
             </div>
           </div>
           <p
+            aria-hidden="true"
             className="additional"
             onClick={[Function]}
           >
             Чего сидишь? Порадуй котэ, 
-            <a>
+            <button>
               купи
-            </a>
+            </button>
           </p>
         </div>
       </li>
@@ -413,10 +162,13 @@ exports[`Main should be rendered 1`] = `
           className="wrapper item"
         >
           <div
+            aria-checked={false}
             className="item"
             onClick={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
+            role="checkbox"
+            tabIndex={2}
           >
             <svg
               className="border svg"
@@ -435,29 +187,35 @@ exports[`Main should be rendered 1`] = `
               className="main"
             >
               <p
+                aria-hidden="true"
                 className="description mouseLeave"
               >
                 Сказочное заморское яство
               </p>
               <div
-                className="header title"
+                aria-hidden="true"
               >
-                 
-                <h2>
-                  Нямушка
-                </h2>
-                 
+                <div
+                  className="header title"
+                >
+                   
+                  <h2>
+                    Нямушка
+                  </h2>
+                   
+                </div>
+                <div
+                  className="header subTitle"
+                >
+                   
+                  <span>
+                    c рыбой
+                  </span>
+                   
+                </div>
               </div>
               <div
-                className="header subTitle"
-              >
-                 
-                <span>
-                  c рыбой
-                </span>
-                 
-              </div>
-              <div
+                aria-hidden="true"
                 className="info"
               >
                 <ul>
@@ -476,29 +234,64 @@ exports[`Main should be rendered 1`] = `
                 </ul>
               </div>
               <div
-                className="body price"
+                aria-hidden="true"
               >
-                <span
-                  className="count"
+                <div
+                  className="body price"
                 >
-                  2
-                </span>
-                <span
-                  className="metric"
+                  <span
+                    className="count"
+                  >
+                    2
+                  </span>
+                  <span
+                    className="metric"
+                  >
+                    кг
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              className="srOnly"
+            >
+              <p>
+                Кошачий корм Нямушка 2 киллограмма, это 40 порций, 2 мыши в подарок
+              </p>
+              <p>
+                Добавить в корзину нажатием enter
+              </p>
+              <div
+                aria-live="polite"
+                role="status"
+              >
+                <p
+                  aria-hidden={false}
                 >
-                  кг
-                </span>
+                  Не добавлено
+                </p>
+                <p
+                  aria-hidden={true}
+                >
+                  Добавлено
+                </p>
+                <p
+                  aria-hidden={true}
+                >
+                  Не добавлено, корм закончился
+                </p>
               </div>
             </div>
           </div>
           <p
+            aria-hidden="true"
             className="additional"
             onClick={[Function]}
           >
             Чего сидишь? Порадуй котэ, 
-            <a>
+            <button>
               купи
-            </a>
+            </button>
           </p>
         </div>
       </li>
@@ -507,10 +300,13 @@ exports[`Main should be rendered 1`] = `
           className="wrapper item"
         >
           <div
+            aria-checked={false}
             className="item"
             onClick={[Function]}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
+            role="checkbox"
+            tabIndex={3}
           >
             <svg
               className="border svg"
@@ -529,29 +325,35 @@ exports[`Main should be rendered 1`] = `
               className="main"
             >
               <p
+                aria-hidden="true"
                 className="description mouseLeave"
               >
                 Сказочное заморское яство
               </p>
               <div
-                className="header title"
+                aria-hidden="true"
               >
-                 
-                <h2>
-                  Нямушка
-                </h2>
-                 
+                <div
+                  className="header title"
+                >
+                   
+                  <h2>
+                    Нямушка
+                  </h2>
+                   
+                </div>
+                <div
+                  className="header subTitle"
+                >
+                   
+                  <span>
+                    c курой
+                  </span>
+                   
+                </div>
               </div>
               <div
-                className="header subTitle"
-              >
-                 
-                <span>
-                  c курой
-                </span>
-                 
-              </div>
-              <div
+                aria-hidden="true"
                 className="info"
               >
                 <ul>
@@ -573,29 +375,64 @@ exports[`Main should be rendered 1`] = `
                 </ul>
               </div>
               <div
-                className="body price"
+                aria-hidden="true"
               >
-                <span
-                  className="count"
+                <div
+                  className="body price"
                 >
-                  5
-                </span>
-                <span
-                  className="metric"
+                  <span
+                    className="count"
+                  >
+                    5
+                  </span>
+                  <span
+                    className="metric"
+                  >
+                    кг
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              className="srOnly"
+            >
+              <p>
+                Кошачий корм Нямушка 5 киллограмм, это 100 порций, 5 мышей в подарок
+              </p>
+              <p>
+                Добавить в корзину нажатием enter
+              </p>
+              <div
+                aria-live="polite"
+                role="status"
+              >
+                <p
+                  aria-hidden={false}
                 >
-                  кг
-                </span>
+                  Не добавлено
+                </p>
+                <p
+                  aria-hidden={true}
+                >
+                  Добавлено
+                </p>
+                <p
+                  aria-hidden={true}
+                >
+                  Не добавлено, корм закончился
+                </p>
               </div>
             </div>
           </div>
           <p
+            aria-hidden="true"
             className="additional"
             onClick={[Function]}
           >
             Чего сидишь? Порадуй котэ, 
-            <a>
+            <button>
               купи
-            </a>
+            </button>
           </p>
         </div>
       </li>
