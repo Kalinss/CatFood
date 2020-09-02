@@ -1,5 +1,5 @@
 @import "../../../styles/variables";
-
+@import "../../../styles/other";
 .wrapper {
   display: flex;
   justify-content: flex-start;
@@ -28,8 +28,12 @@
   text-align: center;
   margin-top: 15px;
 
-  & a {
+  & button {
     color: $primary-decoration-color-default;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    padding: 0;
     cursor: pointer;
   }
 }

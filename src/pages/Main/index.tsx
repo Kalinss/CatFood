@@ -9,9 +9,10 @@ export const Main: React.FC<{}> = () => {
   const [data, dispatch] = useReducer(reducer, catFoodData);
 
   const clickItemCatFood: CatFoodItemEventClickType = (e, id) => {
-    if (id === 2) {
+    const demoId = 2;
+    if (id === demoId) {
       // synthetic example for demonstration
-      dispatch({ type: "disabledItem", id: 2 });
+      dispatch({ type: "disabledItem", id: demoId });
       return;
     }
 
@@ -19,8 +20,8 @@ export const Main: React.FC<{}> = () => {
   };
 
   return (
-    <main className={style.main}>
-      <p className={style.title}>Ты сегодня покормил кота?</p>
+    <main className={style.main} role='main'>
+      <h1 className={style.title} role='title'>Ты сегодня покормил кота?</h1>
       <CatFoodList data={data} clickHandler={clickItemCatFood} />
     </main>
   );

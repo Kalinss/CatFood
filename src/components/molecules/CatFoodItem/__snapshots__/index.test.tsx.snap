@@ -95,7 +95,9 @@ exports[`CatFoodItem should be rendered 1`] = `
     <div
       className="srOnly"
     >
-      <p />
+      <p>
+        Кошачий корм Нямушка 2 киллограмма, это 40 порций, 2 мыши в подарок
+      </p>
       <p>
         Добавить в корзину нажатием enter
       </p>

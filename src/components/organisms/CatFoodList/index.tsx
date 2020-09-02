@@ -18,12 +18,14 @@ export const CatFoodList: React.FC<CatFoodListType> = ({
   return (
     <div className={style.wrapper}>
       <ul className={style.list}>
+        <p className={style.srOnly}>Список с кошачьим кормом</p>
         {data.map((item, i) => (
-          <li key={i}>
+          <li key={i} >
             <CatFoodItem
               classStyle={style.item}
               item={item}
               clickHandler={clickHandler}
+              iter={i}
             />
           </li>
         ))}

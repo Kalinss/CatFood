@@ -22,6 +22,7 @@ export type CatFoodItemDataType = {
     value: string;
     alternative: string;
   };
+  fullDescription:string
 };
 export type CatFoodItemEventClickType = (
   e: React.SyntheticEvent,

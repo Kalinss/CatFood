@@ -28,6 +28,8 @@ const mockDataDefault = {
     value: "Чего сидишь? Порадуй котэ, <a>купи</a>",
     alternative: "Печень утки разварная с артишоками.",
   },
+  fullDescription:
+    "Кошачий корм Нямушка 2 киллограмма, это 40 порций, 2 мыши в подарок",
 };
 const mockDataDisabled = {
   id: 0,
@@ -51,6 +53,8 @@ const mockDataDisabled = {
     value: "Чего сидишь? Порадуй котэ, <a>купи</a>",
     alternative: "Печень утки разварная с артишоками.",
   },
+  fullDescription:
+    "Кошачий корм Нямушка 2 киллограмма, это 40 порций, 2 мыши в подарок",
 };
 const mockDataActive = {
   id: 0,
@@ -74,12 +78,16 @@ const mockDataActive = {
     value: "Чего сидишь? Порадуй котэ, <a>купи</a>",
     alternative: "Печень утки разварная с артишоками.",
   },
+  fullDescription:
+    "Кошачий корм Нямушка 2 киллограмма, это 40 порций, 2 мыши в подарок",
 };
 
 describe("CatFoodItem", () => {
   it("should be rendered", () => {
     const tree = renderer
-      .create(<CatFoodItem item={mockDataDefault} clickHandler={() => {}} />)
+      .create(
+        <CatFoodItem iter={0} item={mockDataDefault} clickHandler={() => {}} />
+      )
       .toJSON();
     expect(tree).toMatchSnapshot();
   });
@@ -90,6 +98,7 @@ describe("CatFoodItem", () => {
         item={mockDataDefault}
         clickHandler={() => {}}
         classStyle={"123"}
+        iter={0}
       />
     );
     expect(wrapper.hasClass("123")).toBe(true);
@@ -99,7 +108,7 @@ describe("CatFoodItem", () => {
 
   it("should toggle alternative description info after mouseEnter and mouseLeave event", () => {
     const wrapper = shallow(
-      <CatFoodItem item={mockDataActive} clickHandler={() => {}} />
+      <CatFoodItem iter={0} item={mockDataActive} clickHandler={() => {}} />
     );
     wrapper.find(".item").simulate("mouseEnter");
     jest.advanceTimersByTime(500);
@@ -115,7 +124,7 @@ describe("CatFoodItem", () => {
 
   it("should showed alternative additional after click", () => {
     const wrapper = shallow(
-      <CatFoodItem item={mockDataActive} clickHandler={() => {}} />
+      <CatFoodItem iter={0} item={mockDataActive} clickHandler={() => {}} />
     );
     wrapper.simulate("click");
     jest.advanceTimersByTime(500);
@@ -127,7 +136,7 @@ describe("CatFoodItem", () => {
 
   it("should showed alternative value in additional field, for active component", () => {
     const wrapper = shallow(
-      <CatFoodItem item={mockDataActive} clickHandler={() => {}} />
+      <CatFoodItem iter={0} item={mockDataActive} clickHandler={() => {}} />
     );
     expect(wrapper.find(".additional").text()).toStrictEqual(
       mockDataActive.additional.alternative
@@ -136,7 +145,7 @@ describe("CatFoodItem", () => {
 
   it("should show warn text,if component is disabled", () => {
     const wrapper = shallow(
-      <CatFoodItem item={mockDataDisabled} clickHandler={() => {}} />
+      <CatFoodItem iter={0} item={mockDataDisabled} clickHandler={() => {}} />
     );
     expect(wrapper.find(".additional").text()).toBe(
       mockDataDisabled.disabled.warn
@@ -145,13 +154,13 @@ describe("CatFoodItem", () => {
 
   it("should have active class", () => {
     const wrapper = shallow(
-      <CatFoodItem item={mockDataActive} clickHandler={() => {}} />
+      <CatFoodItem iter={0} item={mockDataActive} clickHandler={() => {}} />
     );
     expect(wrapper.find(".item").hasClass("active"));
   });
   it("should have disabled class", () => {
     const wrapper = shallow(
-      <CatFoodItem item={mockDataDisabled} clickHandler={() => {}} />
+      <CatFoodItem iter={0} item={mockDataDisabled} clickHandler={() => {}} />
     );
     expect(wrapper.find(".item").hasClass("disabled"));
   });

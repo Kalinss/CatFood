@@ -10,11 +10,13 @@ import { CatFoodItemDataType, CatFoodItemEventClickType } from "./types";
 export type CatFoodItemType = {
   item: CatFoodItemDataType;
   clickHandler: CatFoodItemEventClickType;
+  iter: number;
   classStyle?: string;
 };
 
 export const CatFoodItem: React.FC<CatFoodItemType> = ({
   item,
+  iter = 0,
   clickHandler = () => {},
   classStyle = "",
 }) => {
@@ -46,15 +48,21 @@ export const CatFoodItem: React.FC<CatFoodItemType> = ({
   const getDescriptionAnimationClass = () =>
     isMouseEnter ? style.mouseEnter : style.mouseLeave;
 
-  const itemClickHandler = (e: React.SyntheticEvent, id: number | string) => {
+  const itemClickHandler = (
+    e: React.MouseEvent<HTMLDivElement>,
+    id: number | string
+  ) => {
     setActuallyDescription(item.description.value);
     setProtect(true);
     clickHandler(e, id);
   };
 
-  const linkClickHandler = (e: React.SyntheticEvent, id: number | string) => {
-    if ((e.target as HTMLElement).closest("a") === null) return;
-    e.preventDefault();
+  const buttonClickHandler = (
+    e: React.MouseEvent<HTMLParagraphElement, MouseEvent>,
+    id: number | string
+  ) => {
+    const button = e.target as HTMLButtonElement;
+    if (button.closest("button") === null) return;
     setActuallyDescription(item.description.value);
     setProtect(true);
     clickHandler(e, id);
@@ -86,10 +94,14 @@ export const CatFoodItem: React.FC<CatFoodItemType> = ({
         onClick={(e) => itemClickHandler(e, item.id)}
         onMouseEnter={mouseEnterHandler}
         onMouseLeave={mouseLeaveHandler}
+        role="checkbox"
+        aria-checked={item.isActive}
+        tabIndex={iter + 1}
       >
         <BorderFoodItem classStyle={style.border} />
         <div className={style.main}>
           <p
+            aria-hidden="true"
             className={classNames(
               style.description,
               getDescriptionAnimationClass()
@@ -97,26 +109,48 @@ export const CatFoodItem: React.FC<CatFoodItemType> = ({
           >
             {actuallyDescription}
           </p>
-          <Header classStyle={style.title} as="h2">
-            {item.title}
-          </Header>
-          <Header classStyle={style.subTitle}>{item.subTitle}</Header>
-          <div className={style.info}>
+
+          <div aria-hidden="true">
+            <Header classStyle={style.title} as="h2">
+              {item.title}
+            </Header>
+            <Header classStyle={style.subTitle}>{item.subTitle}</Header>
+          </div>
+
+          <div className={style.info} aria-hidden="true">
             <ul>
               {item.info.map((value, i) => (
                 <li key={i}>{getReactNode(value)}</li>
               ))}
             </ul>
           </div>
-          <CirclePriceLabel
-            classStyle={style.price}
-            count={item.count.value}
-            metric={item.count.metric}
-          />
+
+          <div aria-hidden="true">
+            <CirclePriceLabel
+              classStyle={style.price}
+              count={item.count.value}
+              metric={item.count.metric}
+            />
+          </div>
+        </div>
+
+        <div className={style.srOnly}>
+          <p>{item.fullDescription}</p>
+          <p>Добавить в корзину нажатием enter</p>
+          {
+            <div role="status" aria-live="polite">
+              <p aria-hidden={item.isActive}>Не добавлено</p>
+              <p aria-hidden={!item.isActive}>Добавлено</p>
+              <p aria-hidden={!item.disabled.value}>
+                Не добавлено, корм закончился
+              </p>
+            </div>
+          }
         </div>
       </div>
       <p
-        onClick={(e) => linkClickHandler(e, item.id)}
+        aria-hidden="true"
+        onClick={(e) => buttonClickHandler(e, item.id)}
         className={
           item.disabled.value
             ? classNames(style.additional, style.warn)
