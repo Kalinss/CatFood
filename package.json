@@ -57,7 +57,7 @@
   "scripts": {
     "build:production": "cross-env NODE_ENV=production  webpack --mode=production",
     "build:development": "cross-env NODE_ENV=development  webpack --mode=development",
-    "dev": "tsc --noEmit --sourceMap && cross-env NODE_ENV=development webpack-dev-server --host 192.168.0.104",
+    "dev": "tsc --noEmit --sourceMap && cross-env NODE_ENV=development webpack-dev-server",
     "test": "jest",
     "test update snapshots": "jest --updateSnapshot",
     "predeploy": "cross-env NODE_ENV=production  webpack --mode=production",
