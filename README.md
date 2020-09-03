@@ -40,7 +40,7 @@ Download needed packages
     
 Run the project
     
-    tsc --noEmit && parcel index.html --open
+    tsc --noEmit --sourceMap && cross-env NODE_ENV=development webpack-dev-server
 
      
 p.s - All scripts for launching you can find in file "package.json"
