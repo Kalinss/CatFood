@@ -27,6 +27,7 @@
   font-size: 13px;
   text-align: center;
   margin-top: 15px;
+  height: 13px;
 
   & button {
     color: $primary-decoration-color-default;
@@ -34,6 +35,7 @@
     border: none;
     background-color: transparent;
     padding: 0;
+    height: 100%;
     cursor: pointer;
   }
 }
