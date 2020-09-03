@@ -5,7 +5,6 @@ https://kalinss.github.io/CatFood/
 
   - [Getting Started](#getting-started)
   - [Runing the tests](#running-the-tests)
-  - [Additional information](#Additional information)
   - [Contributing](#contributing)
   
   
@@ -51,10 +50,6 @@ For tests are used Jest and Enzyme packages
     
     "test": "jest",
     "test update snapshots": "jest --updateSnapshot"
-
-## Additional information
-Testing was carried out on IE11 (win7) and other current browsers.
-At the moment, the project fully meets the terms of reference
 
 ## Contributing
 
